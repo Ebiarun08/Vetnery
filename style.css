@@ -8,6 +8,7 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
     transition: 0.3s;
+    border: 2px solid red;
 }
 :root{
     --headerColor:#eaad00;
@@ -65,12 +66,12 @@
 .hero-content h1{
     font-weight: 700;
     font-family: var(--font); 
-    font-size: 46px;
+    /* font-size: 46px; */
 }
 .hero-content p{
     font-weight: 500;
     /* font-size: large; */
-    margin-bottom: 80px ;
+    margin-bottom: 40px ;
 }
 .hero-btn button{
    outline: none;
@@ -106,6 +107,7 @@
     min-height: 50vh;
     height: 100%;
 }
+
 .about-content{
     color: var(--textColor);
     font: var(--font);
@@ -190,10 +192,10 @@
 .team-card h4{
     font-weight: 700;
     margin: 8px 0;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 .team-card p{
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-weight: 400;
     font-style: oblique;
     font-size: 20px;
@@ -241,12 +243,16 @@
 
 }
 .clint-card p{
-    font-weight: 900;
+    font-weight: bold;
 }
 .card-body h4{
     font-weight: 700;
     color: var(--textColor);
 
+}
+.card-body span{
+    text-transform: uppercase;
+    margin: 15px 0;
 }
 .card-body span,
 .card-body a{
@@ -287,7 +293,7 @@ footer{
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 
 }
 .footer-logo form i{
@@ -366,6 +372,10 @@ footer{
     .hero-content p{
         margin-bottom: 30px;
     }
+    .footer-logo form i{
+        padding: 0 10px 0;
+        /* margin-bottom: 30px; */
+     }
 }
 @media(max-width:576px){
     .hero-content h1{
