@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    transition: 0.3s;
+}
+:root{
+    --headerColor:#eaad00;
+    --navButton:#00bfc8;
+    --primaryColor:#ffc400;
+    --buttonColor:#00c0cc;
+    --textColor:#1d1d37;
+    --footerColor:#313131;
+    --iconColor:#eaa901;
+    --font: 'Poppins', sans-serif;
+}
+.navbar{
+    background-color: var(--headerColor);
+    
+}
+.navbar li a{
+    color: #ffff;
+    font-size: 20px;
+}
+#search-input{
+    background-color: var(--primaryColor);
+    border: none;
+    outline: none;
+    padding:  6px;
+   
+    
+}
+#search-input::placeholder{
+  color: #fff;
+}
+#search-btn{
+    background-color: var(--buttonColor);
+    outline: none;
+    border: none;
+    padding: 6px;
+    
+}
+#search-btn i{
+  color: #ffff;
+}
+.home{
+    min-height:70vh;
+    height: 100%;
+    background-color: var(--primaryColor);
+}
+.home-img{
+    width: 100%;
+    max-width: 400px;
+}
+.hero-content{
+    text-transform: capitalize;
+    color: #ffff;
+    letter-spacing: 3px;
+}
+.hero-content h1{
+    font-weight: 700;
+    font-family: var(--font); 
+    font-size: 46px;
+}
+.hero-content p{
+    font-weight: 500;
+    /* font-size: large; */
+    margin-bottom: 80px ;
+}
+.hero-btn button{
+   outline: none;
+   border: none;
+   margin: 10px 30px 10px 0;
+}
+.hero-btn button a{
+    text-decoration: none;
+}
+#contact-btn{
+    background-color: var(--buttonColor);
+    padding: 14px;
+    border-radius: 4px;
+    color: #fff;
+
+}
+#contact-btn:hover{
+    background-color: var(--headerColor);
+    outline: 2px solid white;
+}
+#service-btn{
+    background-color: var(--primaryColor);
+    padding: 14px;
+    border-radius: 4px;
+    color: #fff;
+    border: 2px solid white;
+}
+#service-btn:hover{
+    background-color: var(--buttonColor);
+    border: 2px solid var(--buttonColor);
+}
+.about{
+    min-height: 50vh;
+    height: 100%;
+}
+.about-content{
+    color: var(--textColor);
+    font: var(--font);
+}
+.about-content h1{
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.about-content p{
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 18px;
+}
+#about-btn{
+    background-color: var(--primaryColor);
+    padding: 14px;
+    border-radius: 4px;
+    color: #fff;
+}
+.about-video img{
+    width: 100%;
+    max-width: 400px;
+    z-index: 1;
+    margin-top: -100px;
+    border-radius: 8px;
+}
+.about-video::before{
+    content: "";
+    width: 170px;
+    height: 150px;
+    position: relative;
+    background-color: #ffc400;
+    
+    display: block;
+    top: 200px;
+    right: 25px;
+    z-index: -1;
+    /* margin-bottom: 30px; */
+}
+.service{
+    background-color: var(--primaryColor);
+    color: #fff;
+}
+.service-heading h2{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.service-heading p{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.service-card{
+    text-align: center;
+}
+.service-card img{
+    max-width: 600px;
+    width: 95%;
+    border: 2px solid gainsboro;
+    border-radius: 4px;
+}
+.service-card{
+    margin: 0px 30px 20px 0;
+}
+.service-card h4{
+    font-weight: 600;
+    margin: 20px 0;
+}
+.team-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team-card img{
+    max-width: 600px;
+    width: 95%;
+    border: 1px solid var(--primaryColor);
+    border-radius: 8px ;
+    padding: 5px;
+}
+.team-card h4{
+    font-weight: 700;
+    margin: 8px 0;
+    text-transform: uppercase;
+}
+.team-card p{
+    text-transform: capitalize;
+    font-weight: 400;
+    font-style: oblique;
+    font-size: 20px;
+}
+.team-card .social-icons i{
+    /* font-size: 18px; */
+    color: #ffff;
+    background-color: var(--primaryColor);
+    border-radius: 50%;
+    padding: 5px;
+    margin: 8px;
+    cursor: pointer;
+}
+/* .about-video .play-btn {
+    width: 94px;
+    height: 94px;
+    background: radial-gradient(var(--color-primary) 50%, rgba(13, 66, 255, 0.4) 52%);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: calc(50% - 47px);
+    top: calc(50% - 47px);
+    overflow: hidden;
+} */
+.client{
+    min-height: 40vh;
+    background-image:linear-gradient(rgba(237, 228, 60, 0.412),rgba(228, 195, 76, 0.509)),url(./img/client-bg.jpg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.clint-card{
+    margin-top: 40px;
+    color: #fff;
+}
+.clint-card i{
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.clint-card h3{
+    font-weight: 800;
+    margin-bottom: 10px;
+
+}
+.clint-card p{
+    font-weight: 900;
+}
+.card-body h4{
+    font-weight: 700;
+    color: var(--textColor);
+
+}
+.card-body span,
+.card-body a{
+    color: var(--buttonColor);
+    font-weight: bold;
+}
+footer{
+ background-color: var(--footerColor);
+ color: #fff;
+}
+.useful-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.useful-links h6{
+    font-weight: bold;
+
+}
+.useful-links a{
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 5px;
+
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.footer-logo a,
+.footer-logo form,
+.footer-logo .social-icons{
+   margin-bottom: 20px;
+}
+.footer-logo a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+}
+.footer-logo form i{
+   padding: 0 20px 0;
+   /* margin-bottom: 30px; */
+}
+.footer-logo .social-icons i{
+   color: #000;
+   background-color: #fff;
+   border-radius: 50%;
+   padding: 15px;
+   margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+    .hero-content h1{
+        font-size: 30px;
+    }
+    .hero-content{
+        letter-spacing: 2px;
+    }
+    .hero-content p{
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:576px){
+    .hero-content h1{
+        font-size: 26px;
+    }
+    .hero-content{
+        letter-spacing: 2px;
+    }
+    .hero-content p{
+        margin-bottom: 20px;
+    }
+}
